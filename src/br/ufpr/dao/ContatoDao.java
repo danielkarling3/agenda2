@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import javax.xml.namespace.QName;
 
@@ -21,6 +22,7 @@ import com.sun.xml.internal.txw2.TypedXmlWriter;
 
 import br.ufpr.jdbc.ConectionFactory;
 import br.ufpr.modelo.Contato;
+import sun.util.resources.cldr.CalendarData;
 
 public class ContatoDao {
 
@@ -66,7 +68,12 @@ public class ContatoDao {
 				contato.setNome(select.getString("nome"));
 				contato.setEmail(select.getString("email"));
 				contato.setEndereco(select.getString("endereco"));
-				//contato.setDataNascimento(select.getString("dataNascimento"));
+				
+				Date datanascimentoDate = select.getDate("dataNascimento");
+				
+				Calendar dataNascimento = Calendar.getInstance();
+				dataNascimento.setTime(datanascimentoDate);
+				contato.setDataNascimento(dataNascimento);
 				listaContatos.add(contato);
 			}
 			
