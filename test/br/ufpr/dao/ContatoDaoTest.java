@@ -30,7 +30,7 @@ ContatoDao contatoDao = new ContatoDao();
 		cal.setTime(sdf.parse(data));
 		Contato contato = new Contato("Sou eu",
 					"danielantoniokarling3@gmail.com",
-					"Rua tom Jobim",
+					"Rua tom Jobim", 
 					cal);
 		contatoDao.adiciona(contato);
 		
