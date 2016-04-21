@@ -26,7 +26,7 @@
 
 	<form role="form" action="alteraContatoServlet?id=<%=contato.getID() %>" method="POST">
 		<div class="container">
-			<div class="panel panel-primary">
+			<div class="panel panel-info">
 				<div class="panel-heading">
 					<center>Alterar Dados</center>
 				</div>
@@ -53,8 +53,8 @@
 							type="date" class="form-control" name="dataNascimento"
 							value="<%=new SimpleDateFormat("dd/MM/yyyy").format(contato.getDataNascimento().getTime())%>">
 					</div>
-					<button type="submit" class="btn btn-primary">Alterar</button>
-					<button type="button" class="btn btn-primary"
+					<button type="submit" class="btn btn-info">Alterar</button>
+					<button type="button" class="btn btn-info"
 						onclick="window.location.href = 'listar-contatos-scriptlet.jsp';">Voltar</button>
 
 				</div>

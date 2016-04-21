@@ -17,11 +17,11 @@
 
 	<jsp:useBean id="dao" class="br.ufpr.dao.ContatoDao"></jsp:useBean>
 	<div class="container">
-		<div class="panel panel-primary">
+		<div class="panel panel-info">
 			<div class="panel-heading">
 				<center>Listar Contatos</center>
 			</div>
-			<div class="panel-body">
+			<div class="panel-info">
 				<table class="table">
 					<tr>
 						<td>Nome:</td>
@@ -56,7 +56,7 @@
 							%>
 						</td>
 						<td>
-							<button id="<%=r.getID()%>" class="btn btn-primary"
+							<button id="<%=r.getID()%>" class="btn btn-info"
 								onclick="window.location.href = 'alterar-contato.jsp?id=<%=r.getID()%>';">
 								Alterar</button>
 						</td>
@@ -69,7 +69,7 @@
 
 			</div>
 			<center>
-				<button class="btn btn-primary"
+				<button class="btn btn-info"
 					onclick="window.location.href = 'adiciona-contato.html';">
 					Adicionar Contato</button>
 			</center>
