@@ -3,16 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <title>adicionar contato</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
-
-	<form action="adicionaContato">
-		Nome: <input type="text" name="nome" /><br /> 
-		Email: <input type="text" name="email" /><br />
-		Endereço: <input type="text"name="endereco" /><br /> 
-		Data Nascimento: <input type="text"name="dataNascimento" /><br /> <input type="submit" value="Gravar" />
+	<form role="form" action="adicionaContato" method="get">
+		<div class="container">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<center>Adicionar Contato</center>
+				</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<label for="nome">Nome:</label><input type="nome"
+							class="form-control" name="nome">
+					</div>
+					
+					<div class="form-group">
+						<label for="email">E-mail:</label><input type="email"
+							class="form-control" name="email">
+					</div>
+					
+					<div class="form-group">
+						<label for="endereco">Endereço:</label><input type="endereco"
+							class="form-control" name="endereco">
+					</div>
+					
+					<div class="form-group">
+						<label for="dataNascimento">Data de Nascimento:</label><input type="date"
+							class="form-control" name="dataNascimento">
+					</div>
+					<button type= "submit" class= "btn btn-primary">Adicionar</button>
+					<button type = "button" class = "btn btn-primary"
+						onclick="window.location.href = 'listar-contatos-scriptlet.jsp';">Voltar</button>
+					
+				</div>
+			</div>
+		</div>
 	</form>
-
 </body>
-
 </html>

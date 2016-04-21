@@ -30,6 +30,12 @@ private Calendar dataNascimento;
 	public String getNome() {
 		return nome;
 	}
+	public void setID(Long id) {
+		this.id = id;
+	}
+	public Long getID(){
+		return id;
+	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
