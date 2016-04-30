@@ -55,7 +55,7 @@
 					</div>
 					<button type="submit" class="btn btn-info">Alterar</button>
 					<button type="button" class="btn btn-info"
-						onclick="window.location.href = 'listar-contatos-scriptlet.jsp';">Voltar</button>
+						onclick="window.location.href = 'listar-contatos.jsp';">Voltar</button>
 
 				</div>
 			</div>

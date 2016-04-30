@@ -74,7 +74,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		System.out.println(sdf.format(dataNascimento.getTime()));
 		
 		gravarBanco(nome, email, endereco, dataNascimento);
-		response.sendRedirect("listar-contatos-scriptlet.jsp");
+		response.sendRedirect("listar-contatos.jsp");
 	}
 
 	protected void gravarBanco(String nome, String email, String endereco, Calendar dataNascimento) {
